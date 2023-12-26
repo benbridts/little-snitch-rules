@@ -1,0 +1,10 @@
+- action: allow
+  process: /Applications/BIG-IP Edge Client.app/Contents/MacOS/BIG-IP Edge Client
+  ports: "443"
+  remote-hosts:
+    # Login with Entra AD
+    - device.login.microsoftonline.com
+    - login.microsoftonline.com
+    - aadcdn.msftauthimages.net
+    - eu-mobile.events.data.microsoft.com
+    - aadcdn.msftauth.net

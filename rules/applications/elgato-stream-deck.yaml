@@ -1,0 +1,28 @@
+- action: allow
+  process: &p /Applications/Elgato Stream Deck.app/Contents/MacOS/Stream Deck
+  remote-hosts:
+    - gc-updates.elgato.com  # IAP
+    - links.elgato.com  # IAP
+    - discovery.elgato.com  # IAP
+    - vault.elgato.com  # IAP
+    - marketplace.elgato.com  # IAP
+    - staging-marketplace.elgato.com  # IAP
+    - dev-marketplace.elgato.com  # IAP
+    - mp-gateway.elgato.com  # IAP
+    - mp-gateway-staging.elgato.com  # IAP
+    - mp-gateway-dev.elgato.com  # IAP
+    - account.elgato.com  # IAP
+    - o324181.ingest.sentry.io  # IAP
+- action: allow
+  process: *p
+  ports: "443"
+  remote-hosts:
+    # hue plugin
+    - discovery.meethue.com
+    # Spotify plugin
+    - i.scdn.co
+    # Slack plugin
+    - slack.com
+    # Discord plugin
+    - discord.com
+    - cdn.discordapp.com

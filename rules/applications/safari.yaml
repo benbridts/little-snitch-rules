@@ -1,0 +1,6 @@
+- action: allow
+  process: /System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/Versions/A/com.apple.Safari.SafeBrowsing.Service
+  remote-hosts:
+    - token.safebrowsing.apple
+    - safebrowsing.googleapis.com
+    - proxy.safebrowsing.apple

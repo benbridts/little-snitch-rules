@@ -1,0 +1,12 @@
+- action: allow
+  process: &p "{aws_vault}"
+  ports: "443"
+  remote-hosts: &hosts
+    - sts.eu-west-1.amazonaws.com  # exec
+    - signin.aws.amazon.com  # login
+    - iam.amazonaws.com  # rotate
+
+- action: allow
+  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: *p
+  remote-hosts: *hosts

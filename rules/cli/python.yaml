@@ -1,0 +1,14 @@
+- action: allow
+  process: &p "{python}"
+  remote-hosts: &hosts
+    - pypi.org
+    - codeartifact.eu-west-1.amazonaws.com
+    - dualstack.python.map.fastly.net
+- action: allow
+  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: *p
+  remote-hosts: *hosts
+- action: allow
+  process: /Users/{user}/Applications/PyCharm Professional Edition.app/Contents/MacOS/pycharm
+  via: *p
+  remote-hosts: *hosts

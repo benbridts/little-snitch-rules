@@ -1,0 +1,16 @@
+# CloudFlare
+- action: allow
+  process: any
+  ports: &dns "53"
+  remote-addresses: "1.1.1.1,1.0.0.1"
+- action: allow
+  process: any
+  ports: *dns
+  remote-hosts:
+    - one.one.one.one
+
+# Google
+- action: allow
+  process: any
+  ports: *dns
+  remote-addresses: "8.8.8.8,8.8.4.4"

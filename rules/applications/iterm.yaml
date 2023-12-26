@@ -1,0 +1,12 @@
+- action: allow
+  process: &p /Applications/iTerm.app/Contents/MacOS/iTerm2
+  remote-hosts:
+    - iterm2.com  # IAP
+# allow ssh for git cloning
+- action: allow
+  process: *p
+  via: /usr/bin/ssh
+  remote-hosts:
+    - bitbucket.org
+    - github.com
+  ports: "22"

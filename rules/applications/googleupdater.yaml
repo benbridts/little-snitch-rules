@@ -1,0 +1,6 @@
+- action: allow
+  process: &p /Users/{user}/Library/Application Support/Google/GoogleUpdater/122.0.6253.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater
+  remote-hosts:
+    - update.googleapis.com
+    # gvt1.com is google's content delivery server
+    - edgedl.me.gvt1.com

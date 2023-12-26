@@ -1,0 +1,4 @@
+- action: allow
+  process: /Applications/SoundSource.app/Contents/MacOS/SoundSource
+  remote-hosts:
+    - rogueamoeba.net

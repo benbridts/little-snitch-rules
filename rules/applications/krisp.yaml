@@ -1,0 +1,13 @@
+- action: allow
+  process: &p /Users/{user}/Applications/krisp.app/Contents/MacOS/krisp
+  via: &v /Users/{user}/Applications/krisp.app/Contents/Frameworks/krisp Helper.app/Contents/MacOS/krisp Helper
+  remote-hosts:
+    - analytics.krisp.ai
+    - api.krisp.ai
+
+
+- action: allow
+  process: *p
+  remote-hosts:
+    - krisp-prod-websocket-1562673229.us-east-1.elb.amazonaws.com
+    - o248321.ingest.sentry.io

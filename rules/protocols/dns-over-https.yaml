@@ -1,0 +1,6 @@
+- action: allow
+  process: any
+  ports: "443"
+  remote-hosts:
+    - dns.google
+    - chrome.cloudflare-dns.com

@@ -1,0 +1,45 @@
+- action: deny
+  process: &p /Applications/Spotify.app/Contents/MacOS/Spotify
+  remote-domains:
+    # ads and tracking
+    - doubleclick.net
+    - ingest.sentry.io
+
+- action: allow
+  process: *p
+  protocol: "17"
+  ports: "1900"  #upnp
+  remote-ips:
+    - "239.255.255.250"
+- action: allow
+  process: *p
+  ports: "443"
+  remote-hosts:
+    - update.googleapis.com
+    - a1520.dscc.akamai.net
+- action: allow
+  process: *p
+  ports: "443"
+  remote-domains:
+    - spotify.com
+    - spotify.map.fastly.net
+    - spotifycdn.map.fastly.net
+    - spotifycdn.com
+    - scdn.co
+- action: allow
+  process: *p
+  ports: "443"
+  remote-addresses:
+    - 199.232.170.248  # cdn host
+
+- action: allow
+  process: *p
+  ports: "80"
+  remote-hosts:
+    - ap.spotify.com
+- action: allow
+  process: *p
+  ports: "4070"
+  remote-hosts:
+    - ap.spotify.com
+    - ap-gew4.spotify.com

@@ -1,0 +1,19 @@
+- action: allow
+  process: &p /Applications/Slack.app/Contents/MacOS/Slack
+  ports: "443"
+  remote-hosts:
+    - downloads.slack-edge.com
+    - slack.com
+- action: allow
+  process: *p
+  via: &v /Applications/Slack.app/Contents/Frameworks/Slack Helper.app/Contents/MacOS/Slack Helper
+  remote-domains:
+    - slack.com  # needs $workspace.slack.com
+    - chime.aws  # mulitple hosts under this domain
+    - slack-edge.com  # mulitple hosts under this domain
+- action: allow
+  process: *p
+  via: *v
+  remote-hosts:
+    - slackb.com
+    - slack-imgs.com

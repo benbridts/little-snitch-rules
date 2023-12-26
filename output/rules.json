@@ -1,0 +1,935 @@
+{
+  "name": "combined list",
+  "description": "combination of rules",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/nix/store/09dcvkhf7rdilg4bf0gkl334bj9mxwn8-gh-2.40.0/bin/gh",
+      "remote-hosts": [
+        "api.github.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/nix/store/09dcvkhf7rdilg4bf0gkl334bj9mxwn8-gh-2.40.0/bin/gh",
+      "remote-hosts": [
+        "api.github.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/ba5csb88h9g9pbc13qdprwxvnhx66sdj-nix-2.18.1/bin/nix",
+      "ports": "443",
+      "remote-hosts": [
+        "github.com",
+        "api.github.com",
+        "codeload.github.com",
+        "dualstack.v2.shared.global.fastly.net",
+        "git.sr.ht"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/nix/store/ba5csb88h9g9pbc13qdprwxvnhx66sdj-nix-2.18.1/bin/nix",
+      "ports": "443",
+      "remote-hosts": [
+        "github.com",
+        "api.github.com",
+        "codeload.github.com",
+        "dualstack.v2.shared.global.fastly.net",
+        "git.sr.ht"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/3s3chfkv5gwg6n5gga1024rsl2fc7hsf-curl-8.4.0-bin/bin/curl",
+      "ports": "443",
+      "remote-hosts": [
+        "dualstack.v2.shared.global.fastly.net",
+        "part-0039.t-0009.t-msedge.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/wkdkl3n36fxqqaq256560x17b0ddwc2g-aws-vault-7.2.0/bin/.aws-vault-wrapped",
+      "ports": "443",
+      "remote-hosts": [
+        "sts.eu-west-1.amazonaws.com",
+        "signin.aws.amazon.com",
+        "iam.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/nix/store/wkdkl3n36fxqqaq256560x17b0ddwc2g-aws-vault-7.2.0/bin/.aws-vault-wrapped",
+      "remote-hosts": [
+        "sts.eu-west-1.amazonaws.com",
+        "signin.aws.amazon.com",
+        "iam.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "remote-domains": [
+        "aws.amazon.com",
+        "amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "remote-hosts": [
+        "pypi.org",
+        "codeartifact.eu-west-1.amazonaws.com",
+        "dualstack.python.map.fastly.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "remote-hosts": [
+        "pypi.org",
+        "codeartifact.eu-west-1.amazonaws.com",
+        "dualstack.python.map.fastly.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/PyCharm Professional Edition.app/Contents/MacOS/pycharm",
+      "via": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "remote-hosts": [
+        "pypi.org",
+        "codeartifact.eu-west-1.amazonaws.com",
+        "dualstack.python.map.fastly.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/rr171p6xks9xf2f0ds9wyi4mc36xm5c1-nodejs-20.10.0/bin/node",
+      "remote-hosts": [
+        "registry.npmjs.org",
+        "codeartifact.eu-west-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/nix/store/rr171p6xks9xf2f0ds9wyi4mc36xm5c1-nodejs-20.10.0/bin/node",
+      "remote-hosts": [
+        "registry.npmjs.org",
+        "codeartifact.eu-west-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/IntelliJ IDEA Ultimate.app/Contents/MacOS/idea",
+      "via": "/nix/store/rr171p6xks9xf2f0ds9wyi4mc36xm5c1-nodejs-20.10.0/bin/node",
+      "remote-hosts": [
+        "registry.npmjs.org",
+        "codeartifact.eu-west-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "via": "/nix/store/rr171p6xks9xf2f0ds9wyi4mc36xm5c1-nodejs-20.10.0/bin/node",
+      "remote-hosts": [
+        "registry.npmjs.org",
+        "codeartifact.eu-west-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/m6cgwn0jg3cx95skfms02bcljdg6bzvv-lima-0.19.0/bin/.limactl-wrapped",
+      "remote-hosts": [
+        "changelogs.ubuntu.com",
+        "motd.ubuntu.com",
+        "ntp.ubuntu.com",
+        "ports.ubuntu.com",
+        "download.docker.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/nix/store/m6cgwn0jg3cx95skfms02bcljdg6bzvv-lima-0.19.0/bin/.limactl-wrapped",
+      "remote-hosts": [
+        "changelogs.ubuntu.com",
+        "motd.ubuntu.com",
+        "ntp.ubuntu.com",
+        "ports.ubuntu.com",
+        "download.docker.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Little Snitch.app/Contents/Components/Little Snitch Software Update.app/Contents/MacOS/Little Snitch Software Update",
+      "remote-hosts": [
+        "sw-update.obdev.at"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/Objective Development/Little Snitch/Components/at.obdev.littlesnitch.daemon.bundle/Contents/XPCServices/at.obdev.littlesnitch.urldownloader.xpc/Contents/MacOS/at.obdev.littlesnitch.urldownloader",
+      "ports": "443",
+      "remote-hosts": [
+        "raw.githubusercontent.com",
+        "urlhaus.abuse.ch",
+        "pgl.yoyo.org"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "ports": "443",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "ports": "80",
+      "remote-domains": [
+        "neverssl.com",
+        "prod.detectportal.prod.cloudops.mozgcp.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Discord.app/Contents/MacOS/Discord",
+      "ports": "443",
+      "remote-hosts": [
+        "discord.com",
+        "dl.discordapp.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Discord.app/Contents/MacOS/Discord",
+      "via": "/Applications/Discord.app/Contents/Frameworks/Discord Helper.app/Contents/MacOS/Discord Helper",
+      "ports": "443",
+      "remote-hosts": [
+        "status.discord.com",
+        "latency.discord.media",
+        "cdn.discordapp.com",
+        "images-ext-2.discordapp.net",
+        "images-ext-1.discordapp.net",
+        "media.discordapp.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Discord.app/Contents/MacOS/Discord",
+      "via": "/Applications/Discord.app/Contents/Frameworks/Discord Helper.app/Contents/MacOS/Discord Helper",
+      "ports": "443",
+      "remote-domains": [
+        "discord.gg"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Discord.app/Contents/MacOS/Discord",
+      "via": "/Applications/Discord.app/Contents/Frameworks/Discord Helper (Renderer).app/Contents/MacOS/Discord Helper (Renderer)",
+      "ports": "443",
+      "remote-hosts": [
+        "discord.gg"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Discord.app/Contents/MacOS/Discord",
+      "via": "/Applications/Discord.app/Contents/Frameworks/Discord Helper.app/Contents/MacOS/Discord Helper",
+      "ports": "443",
+      "remote-hosts": [
+        "api.spotify.com",
+        "dealer.spotify.com",
+        "edge-web.dual-gslb.spotify.com",
+        "global-dealer-ssl.spotify.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote-hosts": [
+        "iterm2.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/usr/bin/ssh",
+      "remote-hosts": [
+        "bitbucket.org",
+        "github.com"
+      ],
+      "ports": "22"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/IntelliJ IDEA Ultimate.app/Contents/MacOS/idea",
+      "ports": "443",
+      "remote-hosts": [
+        "cache-redirector.jetbrains.com",
+        "github.com",
+        "raw.githubusercontent.com",
+        "prod.fus.aws.intellij.net",
+        "vulnerability-search.europe-north1-gke.intellij.net",
+        "account.jetbrains.com",
+        "cloudconfig.jetbrains.com",
+        "download.jetbrains.com",
+        "download-cdn.jetbrains.com",
+        "frameworks.jetbrains.com",
+        "plugins.jetbrains.com",
+        "resources.jetbrains.com",
+        "www.jetbrains.com",
+        "schemastore.org",
+        "json.schemastore.org",
+        "www.schemastore.org"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/IntelliJ IDEA Ultimate.app/Contents/MacOS/idea",
+      "ports": "443",
+      "remote-hosts": [
+        "cognito-identity.us-east-1.amazonaws.com",
+        "oidc.us-east-1.amazonaws.com",
+        "idetoolkits.amazonwebservices.com",
+        "client-telemetry.us-east-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+      "remote-domains": [
+        "doubleclick.net",
+        "ingest.sentry.io"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+      "protocol": "17",
+      "ports": "1900",
+      "remote-ips": [
+        "239.255.255.250"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+      "ports": "443",
+      "remote-hosts": [
+        "update.googleapis.com",
+        "a1520.dscc.akamai.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+      "ports": "443",
+      "remote-domains": [
+        "spotify.com",
+        "spotify.map.fastly.net",
+        "spotifycdn.map.fastly.net",
+        "spotifycdn.com",
+        "scdn.co"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+      "ports": "443",
+      "remote-addresses": [
+        "199.232.170.248"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+      "ports": "80",
+      "remote-hosts": [
+        "ap.spotify.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Spotify.app/Contents/MacOS/Spotify",
+      "ports": "4070",
+      "remote-hosts": [
+        "ap.spotify.com",
+        "ap-gew4.spotify.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Rectangle.app/Contents/MacOS/Rectangle",
+      "remote-hosts": [
+        "rectangleapp.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/SoundSource.app/Contents/MacOS/SoundSource",
+      "remote-hosts": [
+        "rogueamoeba.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote-hosts": [
+        "update.code.visualstudio.com",
+        "marketplace.visualstudio.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "via": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper",
+      "remote-hosts": [
+        "api.github.com",
+        "raw.githubusercontent.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "via": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper",
+      "remote-domains": [
+        "gallerycdn.vsassets.io"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "via": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)",
+      "ports": "443",
+      "remote-hosts": [
+        "api.github.com",
+        "raw.githubusercontent.com",
+        "github.com",
+        "bitbucket.org",
+        "portal.sso.us-east-1.amazonaws.com",
+        "codewhisperer.us-east-1.amazonaws.com",
+        "cognito-identity.us-east-1.amazonaws.com",
+        "oidc.us-east-1.amazonaws.com",
+        "codecatalyst.global.api.aws"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/CodeWhisperer.app/Contents/MacOS/codewhisperer_desktop",
+      "ports": "443",
+      "remote-hosts": [
+        "cognito-identity.us-east-1.amazonaws.com",
+        "oidc.us-east-1.amazonaws.com",
+        "desktop-release.codewhisperer.us-east-1.amazonaws.com",
+        "specs.codewhisperer.us-east-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/PyCharm Professional Edition.app/Contents/MacOS/pycharm",
+      "ports": "443",
+      "remote-hosts": [
+        "prod.fus.aws.intellij.net",
+        "account.jetbrains.com",
+        "cloudconfig.jetbrains.com",
+        "plugins.jetbrains.com",
+        "resources.jetbrains.com",
+        "www.jetbrains.com",
+        "bitbucket.org",
+        "github.com",
+        "raw.githubusercontent.com",
+        "registry.npmjs.org",
+        "pypi.org",
+        "pypi.python.org",
+        "schemastore.org",
+        "json.schemastore.org",
+        "www.schemastore.org",
+        "idetoolkits.amazonwebservices.com",
+        "client-telemetry.us-east-1.amazonaws.com",
+        "cognito-identity.us-east-1.amazonaws.com",
+        "oidc.us-east-1.amazonaws.com",
+        "codewhisperer.us-east-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Amazon Chime.app/Contents/MacOS/Amazon Chime",
+      "ports": "443",
+      "remote-hosts": [
+        "cognito-identity.us-east-1.amazonaws.com",
+        "iada-sign-signinel-niiwn22wyckr-1024618568.us-east-1.elb.amazonaws.com",
+        "kinesis.us-east-1.amazonaws.com",
+        "o1138149.ingest.sentry.io"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Amazon Chime.app/Contents/MacOS/Amazon Chime",
+      "ports": "443",
+      "remote-domains": [
+        "app.chime.aws"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Sophos Anti-Virus/SophosWebIntelligence.bundle/Contents/MacOS/SophosWebIntelligence",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Sophos Anti-Virus/SophosConfigD",
+      "ports": "443",
+      "remote-hosts": [
+        "macfeedback.sophos.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Sophos Anti-Virus/SophosMcsAgentD.bundle/Contents/MacOS/SophosMcsAgentD",
+      "ports": "443",
+      "remote-domains": [
+        "prod.hydra.sophos.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Sophos Anti-Virus/SophosUpdater.app/Contents/MacOS/SophosUpdater",
+      "ports": "443",
+      "remote-domains": [
+        "sophosupd.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Sophos Anti-Virus/SophosUpdater.app/Contents/MacOS/SophosUpdater",
+      "via": "/Library/Caches/com.sophos.sau/CID/Sophos Installer.bundle/Contents/MacOS/tools/InstallationDeployer",
+      "remote-hosts": [
+        "macfeedback.sophos.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Sophos Anti-Virus/SophosEventMonitor.bundle/Contents/MacOS/SophosEventMonitor",
+      "ports": "443",
+      "remote-hosts": [
+        "macfeedback.sophos.com",
+        "4.sophosxl.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Sophos/Sophos Scan.app/Contents/MacOS/SophosScanD.app/Contents/MacOS/SophosScanD",
+      "ports": "443",
+      "remote-hosts": [
+        "macfeedback.sophos.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/System/Applications/Weather.app/Contents/PlugIns/WeatherWidget.appex/Contents/MacOS/WeatherWidget",
+      "remote-hosts": [
+        "tether.edge.apple"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/Versions/A/com.apple.Safari.SafeBrowsing.Service",
+      "remote-hosts": [
+        "token.safebrowsing.apple",
+        "safebrowsing.googleapis.com",
+        "proxy.safebrowsing.apple"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Elgato Stream Deck.app/Contents/MacOS/Stream Deck",
+      "remote-hosts": [
+        "gc-updates.elgato.com",
+        "links.elgato.com",
+        "discovery.elgato.com",
+        "vault.elgato.com",
+        "marketplace.elgato.com",
+        "staging-marketplace.elgato.com",
+        "dev-marketplace.elgato.com",
+        "mp-gateway.elgato.com",
+        "mp-gateway-staging.elgato.com",
+        "mp-gateway-dev.elgato.com",
+        "account.elgato.com",
+        "o324181.ingest.sentry.io"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Elgato Stream Deck.app/Contents/MacOS/Stream Deck",
+      "ports": "443",
+      "remote-hosts": [
+        "discovery.meethue.com",
+        "i.scdn.co",
+        "slack.com",
+        "discord.com",
+        "cdn.discordapp.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Alfred 5.app/Contents/MacOS/Alfred",
+      "ports": "443",
+      "remote-hosts": [
+        "alfred.app",
+        "www.alfredapp.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Alfred 5.app/Contents/Preferences/Alfred Preferences.app/Contents/MacOS/Alfred Preferences",
+      "ports": "443",
+      "remote-hosts": [
+        "alfred.app",
+        "www.alfredapp.com",
+        "github.com",
+        "raw.githubusercontent.com",
+        "objects.githubusercontent.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Library/Application Support/Google/GoogleUpdater/122.0.6253.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater",
+      "remote-hosts": [
+        "update.googleapis.com",
+        "edgedl.me.gvt1.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft Word.app/Contents/MacOS/Microsoft Word",
+      "remote-hosts": [
+        "prod.mrodevicemgr.live.com.akadns.net",
+        "officecieu.azurewebsites.net",
+        "eu-office.events.data.microsoft.com",
+        "graph.microsoft.com",
+        "officeclient.microsoft.com",
+        "login.microsoftonline.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft Word.app/Contents/MacOS/Microsoft Word",
+      "remote-domains": [
+        "officeapps.live.com",
+        "office.com",
+        "office.net",
+        "office365.com",
+        "outlook.com",
+        "sharepoint.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Fantastical.app/Contents/MacOS/Fantastical",
+      "ports": "443",
+      "remote-hosts": [
+        "flexibits.com",
+        "api.flexibits.com",
+        "outlook.office365.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Fantastical.app/Contents/Library/LoginItems/85C27NK92C.com.flexibits.fantastical2.mac.helper.app/Contents/MacOS/85C27NK92C.com.flexibits.fantastical2.mac.helper",
+      "remote-hosts": [
+        "pushmac.flexibits.com",
+        "api.flexibits.com",
+        "outlook.office365.com",
+        "login.microsoftonline.com",
+        "graph.microsoft.com",
+        "www.googleapis.com",
+        "apidata.googleusercontent.com",
+        "people.googleapis.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/Android Studio.app/Contents/MacOS/studio",
+      "ports": "443",
+      "remote-hosts": [
+        "plugins.jetbrains.com",
+        "dl.google.com",
+        "d.android.com",
+        "developer.android.com",
+        "ajax.googleapis.com",
+        "fonts.googleapis.com",
+        "maps.googleapis.com",
+        "fonts.gstatic.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/RubyMine.app/Contents/MacOS/rubymine",
+      "ports": "443",
+      "remote-hosts": [
+        "account.jetbrains.com",
+        "cloudconfig.jetbrains.com",
+        "plugins.jetbrains.com",
+        "www.jetbrains.com",
+        "resources.jetbrains.com",
+        "prod.fus.aws.intellij.net",
+        "cognito-identity.us-east-1.amazonaws.com",
+        "oidc.us-east-1.amazonaws.com",
+        "codewhisperer.us-east-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/RubyMine.app/Contents/MacOS/rubymine",
+      "ports": "80,8080",
+      "remote-hosts": [
+        "bitbucket.org"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+      "ports": "443",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+      "ports": "80",
+      "remote-domains": [
+        "neverssl.com",
+        "prod.detectportal.prod.cloudops.mozgcp.net",
+        "detectportal.firefox.com",
+        "amazontrust.com",
+        "pki-goog.l.google.com",
+        "ocsp.edge.digicert.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/1Password.app/Contents/MacOS/1Password",
+      "ports": "443",
+      "remote-hosts": [
+        "cache.agilebits.com",
+        "app-updates.agilebits.com",
+        "b5n.1password.com",
+        "c.1password.com",
+        "1password.com",
+        "my.1password.com",
+        "watchtower.1password.com",
+        "b5n.alb.1password.com",
+        "vip1.g5.cachefly.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/BIG-IP Edge Client.app/Contents/MacOS/BIG-IP Edge Client",
+      "ports": "443",
+      "remote-hosts": [
+        "device.login.microsoftonline.com",
+        "login.microsoftonline.com",
+        "aadcdn.msftauthimages.net",
+        "eu-mobile.events.data.microsoft.com",
+        "aadcdn.msftauth.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/CleanShot X.app/Contents/MacOS/CleanShot X",
+      "ports": "443",
+      "remote-hosts": [
+        "api.cleanshot.cloud",
+        "cleanshot-cloud-fra.s3.eu-central-1.amazonaws.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/usr/local/bin/amagent",
+      "ports": "443",
+      "remote-hosts": [
+        "api.automox.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/JetBrains Toolbox.app/Contents/MacOS/jetbrains-toolbox",
+      "remote-hosts": [
+        "download.jetbrains.com",
+        "download-cdn.jetbrains.com",
+        "oauth.account.jetbrains.com",
+        "www.jetbrains.com",
+        "preview.feed.toolbox.app"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Micro Snitch.app/Contents/MacOS/Micro Snitch",
+      "remote-hosts": [
+        "sw-update.obdev.at"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/OmniDiskSweeper.app/Contents/MacOS/OmniDiskSweeper",
+      "ports": "443",
+      "remote-hosts": [
+        "update.omnigroup.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Dropbox.app/Contents/MacOS/Dropbox",
+      "remote": "broadcast"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Dropbox.app/Contents/MacOS/Dropbox",
+      "remote-domains": [
+        "dropbox.com",
+        "dropbox-dns.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Dropbox.app/Contents/MacOS/Dropbox",
+      "remote-hosts": [
+        "cfl.dropboxstatic.com.cdn.cloudflare.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Library/Dropbox/DropboxMacUpdate.app/Contents/MacOS/DropboxMacUpdate",
+      "remote-hosts": [
+        "client.dropbox.com",
+        "d.dropbox.com",
+        "edge.dropboxstatic.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/krisp.app/Contents/MacOS/krisp",
+      "via": "/Users/ben/Applications/krisp.app/Contents/Frameworks/krisp Helper.app/Contents/MacOS/krisp Helper",
+      "remote-hosts": [
+        "analytics.krisp.ai",
+        "api.krisp.ai"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/krisp.app/Contents/MacOS/krisp",
+      "remote-hosts": [
+        "krisp-prod-websocket-1562673229.us-east-1.elb.amazonaws.com",
+        "o248321.ingest.sentry.io"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Slack.app/Contents/MacOS/Slack",
+      "ports": "443",
+      "remote-hosts": [
+        "downloads.slack-edge.com",
+        "slack.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Slack.app/Contents/MacOS/Slack",
+      "via": "/Applications/Slack.app/Contents/Frameworks/Slack Helper.app/Contents/MacOS/Slack Helper",
+      "remote-domains": [
+        "slack.com",
+        "chime.aws",
+        "slack-edge.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Slack.app/Contents/MacOS/Slack",
+      "via": "/Applications/Slack.app/Contents/Frameworks/Slack Helper.app/Contents/MacOS/Slack Helper",
+      "remote-hosts": [
+        "slackb.com",
+        "slack-imgs.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Vanilla.app/Contents/MacOS/Vanilla",
+      "remote-hosts": [
+        "macrelease.matthewpalmer.net"
+      ]
+    },
+    {
+      "action": "deny",
+      "process": "/System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight",
+      "remote-domains": [
+        "yahoo.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "any",
+      "ports": "443",
+      "remote-hosts": [
+        "dns.google",
+        "chrome.cloudflare-dns.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "any",
+      "ports": "53",
+      "remote-addresses": "1.1.1.1,1.0.0.1"
+    },
+    {
+      "action": "allow",
+      "process": "any",
+      "ports": "53",
+      "remote-hosts": [
+        "one.one.one.one"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "any",
+      "ports": "53",
+      "remote-addresses": "8.8.8.8,8.8.4.4"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/bin/ssh",
+      "ports": "22",
+      "remote-hosts": [
+        "bitbucket.org",
+        "github.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "via": "/Library/Developer/CommandLineTools/usr/libexec/git-core/git-remote-http",
+      "ports": "443",
+      "remote-hosts": [
+        "bitbucket.org",
+        "github.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "via": "/usr/bin/ssh",
+      "ports": "22",
+      "remote-hosts": [
+        "bitbucket.org",
+        "github.com"
+      ]
+    }
+  ]
+}

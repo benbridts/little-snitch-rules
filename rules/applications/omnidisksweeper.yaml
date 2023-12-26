@@ -1,0 +1,5 @@
+- action: allow
+  process: /Applications/OmniDiskSweeper.app/Contents/MacOS/OmniDiskSweeper
+  ports: "443"
+  remote-hosts:
+    - update.omnigroup.com

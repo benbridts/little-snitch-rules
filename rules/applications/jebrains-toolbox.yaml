@@ -1,0 +1,8 @@
+- action: allow
+  process: /Applications/JetBrains Toolbox.app/Contents/MacOS/jetbrains-toolbox
+  remote-hosts:
+    - download.jetbrains.com
+    - download-cdn.jetbrains.com
+    - oauth.account.jetbrains.com
+    - www.jetbrains.com
+    - preview.feed.toolbox.app

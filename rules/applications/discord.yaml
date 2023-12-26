@@ -1,0 +1,40 @@
+- action: allow
+  process: &p /Applications/Discord.app/Contents/MacOS/Discord
+  ports: "443"
+  remote-hosts:
+    - discord.com
+    - dl.discordapp.net
+- action: allow
+  process: *p
+  via: &helper /Applications/Discord.app/Contents/Frameworks/Discord Helper.app/Contents/MacOS/Discord Helper
+  ports: "443"
+  remote-hosts:
+    - status.discord.com
+    - latency.discord.media
+    - cdn.discordapp.com
+    - images-ext-2.discordapp.net
+    - images-ext-1.discordapp.net
+    - media.discordapp.net
+- action: allow
+  process: *p
+  via: *helper
+  ports: "443"
+  remote-domains:
+    # multiple gateways under discord.gg
+    - discord.gg
+- action: allow
+  process: *p
+  via: /Applications/Discord.app/Contents/Frameworks/Discord Helper (Renderer).app/Contents/MacOS/Discord Helper (Renderer)
+  ports: "443"
+  remote-hosts:
+    - discord.gg
+# spotify integration
+- action: allow
+  process: *p
+  via: *helper
+  ports: "443"
+  remote-hosts:
+    - api.spotify.com
+    - dealer.spotify.com
+    - edge-web.dual-gslb.spotify.com
+    - global-dealer-ssl.spotify.com

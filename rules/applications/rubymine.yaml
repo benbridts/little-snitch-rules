@@ -1,0 +1,19 @@
+- action: allow
+  process: &p /Users/{user}/Applications/RubyMine.app/Contents/MacOS/rubymine
+  ports: "443"
+  remote-hosts:
+    - account.jetbrains.com
+    - cloudconfig.jetbrains.com
+    - plugins.jetbrains.com
+    - www.jetbrains.com
+    - resources.jetbrains.com
+    - prod.fus.aws.intellij.net
+    # AWS Toolbox
+    - cognito-identity.us-east-1.amazonaws.com
+    - oidc.us-east-1.amazonaws.com
+    - codewhisperer.us-east-1.amazonaws.com
+- action: allow
+  process: *p
+  ports: "80,8080"
+  remote-hosts:
+    - bitbucket.org

@@ -1,0 +1,18 @@
+# surf over https is allowed
+- action: allow
+  process: &p /Applications/Firefox.app/Contents/MacOS/firefox
+  ports: "443"
+  remote: any
+# http exceptions
+- action: allow
+  process: *p
+  ports: "80"
+  remote-domains:
+    # portals
+    - neverssl.com
+    - prod.detectportal.prod.cloudops.mozgcp.net
+    - detectportal.firefox.com
+    # oscp / pki
+    - amazontrust.com  # ACM
+    - pki-goog.l.google.com
+    - ocsp.edge.digicert.com

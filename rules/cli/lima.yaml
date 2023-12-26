@@ -1,0 +1,12 @@
+- action: allow
+  process: &p "{limactl}"
+  remote-hosts: &hosts
+    - changelogs.ubuntu.com
+    - motd.ubuntu.com
+    - ntp.ubuntu.com
+    - ports.ubuntu.com
+    - download.docker.com
+- action: allow
+  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: *p
+  remote-hosts: *hosts

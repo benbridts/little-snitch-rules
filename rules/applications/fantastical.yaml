@@ -1,0 +1,22 @@
+- action: allow
+  process: &app /Applications/Fantastical.app/Contents/MacOS/Fantastical
+  ports: "443"
+  remote-hosts:
+    - flexibits.com  # IAP: account + updates
+    - api.flexibits.com  # IAP
+    # office 365
+    - outlook.office365.com
+- action: allow
+  process: &helper /Applications/Fantastical.app/Contents/Library/LoginItems/85C27NK92C.com.flexibits.fantastical2.mac.helper.app/Contents/MacOS/85C27NK92C.com.flexibits.fantastical2.mac.helper
+  remote-hosts:
+    # app
+    - pushmac.flexibits.com  # IAP
+    - api.flexibits.com  # IAP
+    # office 365
+    - outlook.office365.com
+    - login.microsoftonline.com
+    - graph.microsoft.com
+    # google
+    - www.googleapis.com
+    - apidata.googleusercontent.com
+    - people.googleapis.com

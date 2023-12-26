@@ -1,0 +1,4 @@
+- action: allow
+  process: /Applications/Rectangle.app/Contents/MacOS/Rectangle
+  remote-hosts:
+    - rectangleapp.com

@@ -1,0 +1,4 @@
+- action: allow
+  process: /Applications/Micro Snitch.app/Contents/MacOS/Micro Snitch
+  remote-hosts:
+    - sw-update.obdev.at  # IAP

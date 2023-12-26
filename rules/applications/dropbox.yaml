@@ -1,0 +1,19 @@
+- action: allow
+  process: &dropbox /Applications/Dropbox.app/Contents/MacOS/Dropbox
+  remote: broadcast
+- action: allow
+  process: *dropbox
+  remote-domains:
+    # mulitple hosts under these domains
+    - dropbox.com  # IAP
+    - dropbox-dns.com  # IAP
+- action: allow
+  process: *dropbox
+  remote-hosts:
+    - cfl.dropboxstatic.com.cdn.cloudflare.net
+- action: allow
+  process: &updater /Users/{user}/Library/Dropbox/DropboxMacUpdate.app/Contents/MacOS/DropboxMacUpdate
+  remote-hosts:
+    - client.dropbox.com
+    - d.dropbox.com
+    - edge.dropboxstatic.com

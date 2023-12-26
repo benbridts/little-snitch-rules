@@ -1,0 +1,22 @@
+- action: allow
+  process: &nix "{nix}"
+  ports: "443"
+  remote-hosts: &hosts
+    - github.com
+    - api.github.com
+    - codeload.github.com
+    - dualstack.v2.shared.global.fastly.net
+    - git.sr.ht
+
+- action: allow
+  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: *nix
+  ports: "443"
+  remote-hosts: *hosts
+
+- action: allow
+  process: "{curl}"
+  ports: "443"
+  remote-hosts:
+    - dualstack.v2.shared.global.fastly.net
+    - part-0039.t-0009.t-msedge.net

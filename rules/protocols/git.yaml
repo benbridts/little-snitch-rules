@@ -1,0 +1,19 @@
+# SSH
+- action: allow
+  process: &ssh /usr/bin/ssh
+  ports: "22"
+  remote-hosts: &hosts
+    - bitbucket.org
+    - github.com
+# using iTerm
+- action: allow
+  process: &iTerm /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: &http /Library/Developer/CommandLineTools/usr/libexec/git-core/git-remote-http
+  ports: "443"
+  remote-hosts: *hosts
+# using Visual Studio Code
+- action: allow
+  process: /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+  via: *ssh
+  ports: "22"
+  remote-hosts: *hosts

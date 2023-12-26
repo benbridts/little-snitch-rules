@@ -1,0 +1,33 @@
+- action: allow
+  process: &p /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+  remote-hosts:
+    - update.code.visualstudio.com
+    - marketplace.visualstudio.com
+# Helper
+- action: allow
+  process: *p
+  via: &helper /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper
+  remote-hosts:
+    - api.github.com
+    - raw.githubusercontent.com
+- action: allow
+  process: *p
+  via: *helper
+  remote-domains:
+    - gallerycdn.vsassets.io
+# Helper Plugin
+- action: allow
+  process: *p
+  via: &helper_plugin /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)
+  ports: "443"
+  remote-hosts:
+    - api.github.com
+    - raw.githubusercontent.com
+    - github.com
+    - bitbucket.org
+    # AWS Toolkit
+    - portal.sso.us-east-1.amazonaws.com
+    - codewhisperer.us-east-1.amazonaws.com
+    - cognito-identity.us-east-1.amazonaws.com
+    - oidc.us-east-1.amazonaws.com
+    - codecatalyst.global.api.aws
