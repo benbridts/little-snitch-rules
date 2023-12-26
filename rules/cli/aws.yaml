@@ -1,0 +1,8 @@
+# AWS CLI is seens as python by little snitch
+- action: allow
+  process: &iterm /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: &python "{python}"
+  remote-domains:
+    - aws.amazon.com
+    # amazonaws.com also includes customer ALBs, but thar's okay if it's via iTerm
+    - amazonaws.com

@@ -1,0 +1,12 @@
+# surf over https is allowed
+- action: allow
+  process: &p /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+  ports: "443"
+  remote: any
+# http exceptions
+- action: allow
+  process: *p
+  ports: "80"
+  remote-domains:
+    - neverssl.com
+    - prod.detectportal.prod.cloudops.mozgcp.net

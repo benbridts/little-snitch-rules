@@ -1,0 +1,13 @@
+- action: allow
+  process: &p /Users/{user}/Applications/RubyMine.app/Contents/MacOS/rubymine
+  ports: "443"
+  remnote-hosts:
+    - account.jetbrains.com
+    - cloudconfig.jetbrains.com
+    - plugins.jetbrains.com
+    - www.jetbrains.com
+- action: allow
+  process: *p
+  ports: "80,8080"
+  remote-hosts:
+    - bitbucket.org

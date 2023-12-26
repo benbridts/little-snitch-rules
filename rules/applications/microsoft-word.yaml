@@ -1,0 +1,18 @@
+- action: allow
+  process: &p /Applications/Microsoft Word.app/Contents/MacOS/Microsoft Word
+  remote-hosts:
+    - prod.mrodevicemgr.live.com.akadns.net
+    - officecieu.azurewebsites.net
+    - eu-office.events.data.microsoft.com
+    - graph.microsoft.com
+    - officeclient.microsoft.com
+    - login.microsoftonline.com
+- action: allow
+  process: *p
+  remote-domains:
+    - officeapps.live.com
+    - office.com
+    - office.net
+    - office365.com
+    - outlook.com
+    - sharepoint.com

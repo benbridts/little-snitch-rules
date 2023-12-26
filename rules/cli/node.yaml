@@ -1,0 +1,21 @@
+# direct
+- action: allow
+  process: &node "{node}"
+  remote-hosts: &hosts
+    - registry.npmjs.org
+    - codeartifact.eu-west-1.amazonaws.com
+# via iTerm
+- action: allow
+  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: *node
+  remote-hosts: *hosts
+# via InteliJ
+- action: allow
+  process: /Users/{user}/Applications/IntelliJ IDEA Ultimate.app/Contents/MacOS/idea
+  via: *node
+  remote-hosts: *hosts
+# via Visual Studio Code
+- action: allow
+  process: /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+  via: *node
+  remote-hosts: *hosts

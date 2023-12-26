@@ -1,0 +1,20 @@
+- action: allow
+  process: &p /Applications/Elgato Stream Deck.app/Contents/MacOS/Stream Deck
+  remote-hosts:
+    - gc-updates.elgato.com  # IAP
+    - links.elgato.com  # IAP
+    - discovery.elgato.com  # IAP
+    - vault.elgato.com  # IAP
+    - marketplace.elgato.com  # IAP
+    - staging-marketplace.elgato.com  # IAP
+    - dev-marketplace.elgato.com  # IAP
+    - mp-gateway.elgato.com  # IAP
+    - mp-gateway-staging.elgato.com  # IAP
+    - mp-gateway-dev.elgato.com  # IAP
+    - account.elgato.com  # IAP
+
+- action: allow
+  process: *p
+  remote-hosts:
+    # hue plugin
+    - discovery.meethue.com

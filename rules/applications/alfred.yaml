@@ -1,0 +1,16 @@
+- action: allow
+  process: /Applications/Alfred 5.app/Contents/MacOS/Alfred
+  ports: "443"
+  remote-hosts:
+    - alfred.app
+    - www.alfredapp.com
+- action: allow
+  process: /Applications/Alfred 5.app/Contents/Preferences/Alfred Preferences.app/Contents/MacOS/Alfred Preferences
+  ports: "443"
+  remote-hosts:
+    - alfred.app
+    - www.alfredapp.com
+    # for downloading workflows
+    - github.com
+    - raw.githubusercontent.com
+    - objects.githubusercontent.com

@@ -1,0 +1,10 @@
+- action: allow
+  process: /Applications/CodeWhisperer.app/Contents/MacOS/codewhisperer_desktop
+  ports: "443"
+  remote-hosts:
+    # signin with builders id
+    - cognito-identity.us-east-1.amazonaws.com
+    - oidc.us-east-1.amazonaws.com
+    # tool specific
+    - desktop-release.codewhisperer.us-east-1.amazonaws.com
+    - specs.codewhisperer.us-east-1.amazonaws.com

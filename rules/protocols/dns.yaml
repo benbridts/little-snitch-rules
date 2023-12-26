@@ -1,0 +1,9 @@
+- action: allow
+  process: any
+  ports: &dns "53"
+  remote-addresses: &cloudflare "1.1.1.1,1.0.0.1"
+
+- action: allow
+  process: any
+  ports: *dns
+  remote-addresses: &google "8.8.8.8,8.8.4.4"

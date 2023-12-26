@@ -1,0 +1,6 @@
+- action: allow
+  process: /Applications/CleanShot X.app/Contents/MacOS/CleanShot X
+  ports: "443"
+  remote-hosts:
+    - api.cleanshot.cloud
+    - cleanshot-cloud-fra.s3.eu-central-1.amazonaws.com

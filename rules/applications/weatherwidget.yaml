@@ -1,0 +1,4 @@
+- action: allow
+  process: /System/Applications/Weather.app/Contents/PlugIns/WeatherWidget.appex/Contents/MacOS/WeatherWidget
+  remote-hosts:
+    - tether.edge.apple

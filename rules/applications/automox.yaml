@@ -1,0 +1,5 @@
+- action: allow
+  process: /usr/local/bin/amagent
+  ports: "443"
+  remote-hosts:
+    - api.automox.com

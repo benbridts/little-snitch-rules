@@ -1,0 +1,13 @@
+- action: allow
+  process: &nix "{nix}"
+  ports: "443"
+  remote-hosts: &hosts
+    - github.com
+    - api.github.com
+    - codeload.github.com
+
+- action: allow
+  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: *nix
+  ports: "443"
+  remote-hosts: *hosts

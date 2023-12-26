@@ -1,0 +1,8 @@
+- action: allow
+  process: &p "{gh}"
+  remote-hosts: &hosts
+    - api.github.com
+- action: allow
+  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  via: *p
+  remote-hosts: *hosts

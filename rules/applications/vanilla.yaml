@@ -1,0 +1,4 @@
+- action: allow
+  process: /Applications/Vanilla.app/Contents/MacOS/Vanilla
+  remote-hosts:
+    - macrelease.matthewpalmer.net

@@ -1,0 +1,5 @@
+---
+- action: deny
+  process: /System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight
+  remote-domains:
+    - yahoo.com
