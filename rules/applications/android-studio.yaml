@@ -1,5 +1,5 @@
 - action: allow
-  process: /Users/ben/Applications/Android Studio.app/Contents/MacOS/studio
+  process: /Users/{user}/Applications/Android Studio.app/Contents/MacOS/studio
   ports: "443"
   remote-hosts:
     - plugins.jetbrains.com
@@ -11,3 +11,4 @@
     - fonts.googleapis.com
     - maps.googleapis.com
     - fonts.gstatic.com
+    - play.google.com

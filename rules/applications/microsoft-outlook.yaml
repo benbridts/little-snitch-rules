@@ -1,0 +1,16 @@
+- action: allow
+  process: &p /Applications/Microsoft Outlook.app/Contents/MacOS/Microsoft Outlook
+  ports: "443"
+  remote-hosts:
+    - outlook.office.com
+    - outlook.office365.com
+    - config.edge.skype.com
+    - presence.teams.microsoft.com
+    - nexusrules.officeapps.live.com
+    - eu-office.events.data.microsoft.com
+    - login.microsoftonline.com
+    - ecs.office.com
+    - eur.loki.delve.office.com
+    - appsforoffice.microsoft.com
+    - augloop.office.com
+    - agave.myanalytics.cdn.office.net

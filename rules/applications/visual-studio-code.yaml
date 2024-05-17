@@ -3,6 +3,13 @@
   remote-hosts:
     - update.code.visualstudio.com
     - marketplace.visualstudio.com
+    # ???
+    - onedscolprdeus21.eastus.cloudapp.azure.com
+    - d3gi1t59l6k4gt.cloudfront.net
+    - e-0014.e-msedge.net
+    - www.gravatar.com
+    - az764295.vo.msecnd.net
+    - onedscolprdaue02.australiaeast.cloudapp.azure.com
 # Helper
 - action: allow
   process: *p

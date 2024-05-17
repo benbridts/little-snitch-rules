@@ -3,3 +3,9 @@
   ports: "443"
   remote-hosts:
     - api.automox.com
+
+- action: allow
+  process: /usr/bin/curl
+  ports: "443"
+  remote-hosts:
+    - storage-cdn.prod.automox.com

@@ -1,0 +1,17 @@
+- action: allow
+  process: &p /Applications/Microsoft Teams (work or school).app/Contents/MacOS/MSTeams
+  ports: "443"
+  remote-hosts:
+    - onedscolprdneu15.northeurope.cloudapp.azure.com
+    - s-0005.dual-s-msedge.net
+    - odc.officeapps.live.com
+    - login.microsoftonline.com
+    - eu-api.asm.skype.com
+    - onedscolprdneu10.northeurope.cloudapp.azure.com
+    - graph.microsoft.com
+
+- action: allow
+  process: *p
+  ports: "443"
+  remote-domains:
+    - teams.microsoft.com

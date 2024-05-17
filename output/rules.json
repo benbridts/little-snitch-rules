@@ -385,7 +385,13 @@
       "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
       "remote-hosts": [
         "update.code.visualstudio.com",
-        "marketplace.visualstudio.com"
+        "marketplace.visualstudio.com",
+        "onedscolprdeus21.eastus.cloudapp.azure.com",
+        "d3gi1t59l6k4gt.cloudfront.net",
+        "e-0014.e-msedge.net",
+        "www.gravatar.com",
+        "az764295.vo.msecnd.net",
+        "onedscolprdaue02.australiaeast.cloudapp.azure.com"
       ]
     },
     {
@@ -535,6 +541,25 @@
     },
     {
       "action": "allow",
+      "process": "/Applications/Microsoft Outlook.app/Contents/MacOS/Microsoft Outlook",
+      "ports": "443",
+      "remote-hosts": [
+        "outlook.office.com",
+        "outlook.office365.com",
+        "config.edge.skype.com",
+        "presence.teams.microsoft.com",
+        "nexusrules.officeapps.live.com",
+        "eu-office.events.data.microsoft.com",
+        "login.microsoftonline.com",
+        "ecs.office.com",
+        "eur.loki.delve.office.com",
+        "appsforoffice.microsoft.com",
+        "augloop.office.com",
+        "agave.myanalytics.cdn.office.net"
+      ]
+    },
+    {
+      "action": "allow",
       "process": "/System/Applications/Weather.app/Contents/PlugIns/WeatherWidget.appex/Contents/MacOS/WeatherWidget",
       "remote-hosts": [
         "tether.edge.apple"
@@ -576,7 +601,8 @@
         "i.scdn.co",
         "slack.com",
         "discord.com",
-        "cdn.discordapp.com"
+        "cdn.discordapp.com",
+        "fonts.gstatic.com"
       ]
     },
     {
@@ -602,7 +628,7 @@
     },
     {
       "action": "allow",
-      "process": "/Users/ben/Library/Application Support/Google/GoogleUpdater/122.0.6253.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater",
+      "process": "/Users/ben/Library/Application Support/Google/GoogleUpdater/126.0.6441.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater",
       "remote-hosts": [
         "update.googleapis.com",
         "edgedl.me.gvt1.com"
@@ -668,7 +694,8 @@
         "ajax.googleapis.com",
         "fonts.googleapis.com",
         "maps.googleapis.com",
-        "fonts.gstatic.com"
+        "fonts.gstatic.com",
+        "play.google.com"
       ]
     },
     {
@@ -727,7 +754,16 @@
         "my.1password.com",
         "watchtower.1password.com",
         "b5n.alb.1password.com",
+        "b5n.edge.1password.com",
         "vip1.g5.cachefly.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/1Password.app/Contents/MacOS/1Password",
+      "ports": "443",
+      "remote-hosts": [
+        "telemetry.1passwordservices.com"
       ]
     },
     {
@@ -761,6 +797,14 @@
     },
     {
       "action": "allow",
+      "process": "/usr/bin/curl",
+      "ports": "443",
+      "remote-hosts": [
+        "storage-cdn.prod.automox.com"
+      ]
+    },
+    {
+      "action": "allow",
       "process": "/Applications/JetBrains Toolbox.app/Contents/MacOS/jetbrains-toolbox",
       "remote-hosts": [
         "download.jetbrains.com",
@@ -783,6 +827,47 @@
       "ports": "443",
       "remote-hosts": [
         "update.omnigroup.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft Teams (work or school).app/Contents/MacOS/MSTeams",
+      "ports": "443",
+      "remote-hosts": [
+        "onedscolprdneu15.northeurope.cloudapp.azure.com",
+        "s-0005.dual-s-msedge.net",
+        "odc.officeapps.live.com",
+        "login.microsoftonline.com",
+        "eu-api.asm.skype.com",
+        "onedscolprdneu10.northeurope.cloudapp.azure.com",
+        "graph.microsoft.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft Teams (work or school).app/Contents/MacOS/MSTeams",
+      "ports": "443",
+      "remote-domains": [
+        "teams.microsoft.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/GoLand.app/Contents/MacOS/goland",
+      "ports": "443",
+      "remote-hosts": [
+        "github.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/Users/ben/Applications/GoLand.app/Contents/MacOS/goland",
+      "via": "/nix/store/z6p2j8shdwi74kbm86jwdh03vxq91l0q-go-1.21.5/share/go/bin/go",
+      "ports": "443",
+      "remote-hosts": [
+        "proxy.golang.org",
+        "sum.golang.org",
+        "storage.googleapis.com"
       ]
     },
     {
