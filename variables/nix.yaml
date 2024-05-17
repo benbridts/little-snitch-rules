@@ -1,7 +1,7 @@
 aws_vault: /nix/store/wkdkl3n36fxqqaq256560x17b0ddwc2g-aws-vault-7.2.0/bin/.aws-vault-wrapped
-curl: /nix/store/3s3chfkv5gwg6n5gga1024rsl2fc7hsf-curl-8.4.0-bin/bin/curl
-gh: /nix/store/09dcvkhf7rdilg4bf0gkl334bj9mxwn8-gh-2.40.0/bin/gh
-limactl: /nix/store/m6cgwn0jg3cx95skfms02bcljdg6bzvv-lima-0.19.0/bin/.limactl-wrapped
-nix: /nix/store/ba5csb88h9g9pbc13qdprwxvnhx66sdj-nix-2.18.1/bin/nix
-node: /nix/store/rr171p6xks9xf2f0ds9wyi4mc36xm5c1-nodejs-20.10.0/bin/node
+curl: /nix/store/k397viy4sy1gq1sgdj2ddyll5n33y2yx-curl-8.7.1-bin/bin/curl
+gh: /nix/store/pv3hd6w8dyqndp8jzs9i4j8vdqgl0map-gh-2.42.1/bin/gh
+limactl: /nix/store/viv97gnnms5k1ymakwa0hmi3p772y1pn-lima-0.21.0/bin/.limactl-wrapped
+nix: /nix/store/009hyb1ryy8jrypqikcaz4nfh3xkbaaz-nix-2.18.2/bin/nix
+node: /nix/store/m5qp112sg85v6kx5xkz8ka8hlhrwmflp-nodejs-22.0.0/bin/node
 python: /nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11
