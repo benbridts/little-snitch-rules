@@ -1,8 +1,11 @@
 - action: allow
-  process: /Applications/JetBrains Toolbox.app/Contents/MacOS/jetbrains-toolbox
+  process: identifier.2ZEFAR8TH3/com.jetbrains.toolbox
   remote-hosts:
     - download.jetbrains.com
     - download-cdn.jetbrains.com
     - oauth.account.jetbrains.com
     - www.jetbrains.com
     - preview.feed.toolbox.app
+    - d3kdv2x2np28ys.cloudfront.net  # updates/plugins/... ? (backed by s3)
+    - downloads.marketplace.jetbrains.com
+    - plugins.jetbrains.com

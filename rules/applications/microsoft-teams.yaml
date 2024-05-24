@@ -1,17 +1,18 @@
 - action: allow
-  process: &p /Applications/Microsoft Teams (work or school).app/Contents/MacOS/MSTeams
+  process: &p identifier.UBF8T346G9/com.microsoft.teams2
   ports: "443"
   remote-hosts:
-    - onedscolprdneu15.northeurope.cloudapp.azure.com
     - s-0005.dual-s-msedge.net
     - odc.officeapps.live.com
     - login.microsoftonline.com
     - eu-api.asm.skype.com
-    - onedscolprdneu10.northeurope.cloudapp.azure.com
-    - graph.microsoft.com
+    - ams-efz.ms-acdc.office.com
+    - statics.teams.cdn.office.net
 
 - action: allow
   process: *p
   ports: "443"
   remote-domains:
     - teams.microsoft.com
+    - graph.microsoft.com
+    - edge.microsoft.com

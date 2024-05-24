@@ -1,5 +1,5 @@
 - action: allow
-  process: &p /Applications/Microsoft Outlook.app/Contents/MacOS/Microsoft Outlook
+  process: &p identifier.UBF8T346G9/com.microsoft.Outlook
   ports: "443"
   remote-hosts:
     - outlook.office.com
@@ -14,3 +14,9 @@
     - appsforoffice.microsoft.com
     - augloop.office.com
     - agave.myanalytics.cdn.office.net
+    - dataservice.protection.outlook.com
+- action: allow
+  process: *p
+  ports: "443"
+  remote-domains:
+    - safelinks.protection.outlook.com

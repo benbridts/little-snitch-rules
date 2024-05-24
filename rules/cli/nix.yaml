@@ -7,10 +7,24 @@
     - codeload.github.com
     - dualstack.v2.shared.global.fastly.net
     - git.sr.ht
+    - aed270f02d59711e9aaa902ee3ef9179-9aec589b0bda0555.elb.eu-central-1.amazonaws.com
+    - homebrew.github.io
+    - d1p4m2oaolmclh.cloudfront.net
 
 - action: allow
-  process: /Applications/iTerm.app/Contents/MacOS/iTerm2
+  process: &iterm identifier.H7V7XYVQ7D/com.googlecode.iterm2
   via: *nix
+  ports: "443"
+  remote-hosts: *hosts
+
+- action: allow
+  process: *iterm
+  via: &apple_curl identifier.APPLE/com.apple.curl
+  ports: "443"
+  remote-hosts: *hosts
+
+- action: allow
+  process: "{curl}"
   ports: "443"
   remote-hosts: *hosts
 
@@ -20,3 +34,14 @@
   remote-hosts:
     - dualstack.v2.shared.global.fastly.net
     - part-0039.t-0009.t-msedge.net
+    - s-part-0039.t-0009.t-msedge.net
+    - objects.githubusercontent.com
+    - registry.npmjs.org
+    - fg.microsoft.map.fastly.net
+    - cache.agilebits.com
+
+- action: allow
+  process: "{curl}"
+  ports: "443"
+  remote-domains:
+    - gallery.vsassets.io  # per publisher/package subdomains

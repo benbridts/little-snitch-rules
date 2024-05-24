@@ -1,5 +1,5 @@
 - action: allow
-  process: &p /Users/{user}/Applications/PyCharm Professional Edition.app/Contents/MacOS/pycharm
+  process: &p identifier.2ZEFAR8TH3/com.jetbrains.pycharm
   ports: "443"
   remote-hosts:
     - prod.fus.aws.intellij.net
@@ -8,6 +8,12 @@
     - plugins.jetbrains.com
     - resources.jetbrains.com
     - www.jetbrains.com
+    - d3gi1t59l6k4gt.cloudfront.net
+    - d3kdv2x2np28ys.cloudfront.net
+    - update.googleapis.com
+    - vulnerability-search.europe-north1-gke.intellij.net
+    - analytics.services.jetbrains.com
+    - downloads.marketplace.jetbrains.com
     # Source Code
     - bitbucket.org
     - github.com

@@ -26,12 +26,15 @@
         "api.github.com",
         "codeload.github.com",
         "dualstack.v2.shared.global.fastly.net",
-        "git.sr.ht"
+        "git.sr.ht",
+        "aed270f02d59711e9aaa902ee3ef9179-9aec589b0bda0555.elb.eu-central-1.amazonaws.com",
+        "homebrew.github.io",
+        "d1p4m2oaolmclh.cloudfront.net"
       ]
     },
     {
       "action": "allow",
-      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
       "via": "/nix/store/009hyb1ryy8jrypqikcaz4nfh3xkbaaz-nix-2.18.2/bin/nix",
       "ports": "443",
       "remote-hosts": [
@@ -39,16 +42,63 @@
         "api.github.com",
         "codeload.github.com",
         "dualstack.v2.shared.global.fastly.net",
-        "git.sr.ht"
+        "git.sr.ht",
+        "aed270f02d59711e9aaa902ee3ef9179-9aec589b0bda0555.elb.eu-central-1.amazonaws.com",
+        "homebrew.github.io",
+        "d1p4m2oaolmclh.cloudfront.net"
       ]
     },
     {
       "action": "allow",
-      "process": "/nix/store/k397viy4sy1gq1sgdj2ddyll5n33y2yx-curl-8.7.1-bin/bin/curl",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "via": "identifier.APPLE/com.apple.curl",
+      "ports": "443",
+      "remote-hosts": [
+        "github.com",
+        "api.github.com",
+        "codeload.github.com",
+        "dualstack.v2.shared.global.fastly.net",
+        "git.sr.ht",
+        "aed270f02d59711e9aaa902ee3ef9179-9aec589b0bda0555.elb.eu-central-1.amazonaws.com",
+        "homebrew.github.io",
+        "d1p4m2oaolmclh.cloudfront.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/1cpq0h4cy1lq86bj0pzy8pvnmralv1ar-curl-8.7.1-bin/bin/curl",
+      "ports": "443",
+      "remote-hosts": [
+        "github.com",
+        "api.github.com",
+        "codeload.github.com",
+        "dualstack.v2.shared.global.fastly.net",
+        "git.sr.ht",
+        "aed270f02d59711e9aaa902ee3ef9179-9aec589b0bda0555.elb.eu-central-1.amazonaws.com",
+        "homebrew.github.io",
+        "d1p4m2oaolmclh.cloudfront.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/1cpq0h4cy1lq86bj0pzy8pvnmralv1ar-curl-8.7.1-bin/bin/curl",
       "ports": "443",
       "remote-hosts": [
         "dualstack.v2.shared.global.fastly.net",
-        "part-0039.t-0009.t-msedge.net"
+        "part-0039.t-0009.t-msedge.net",
+        "s-part-0039.t-0009.t-msedge.net",
+        "objects.githubusercontent.com",
+        "registry.npmjs.org",
+        "fg.microsoft.map.fastly.net",
+        "cache.agilebits.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "/nix/store/1cpq0h4cy1lq86bj0pzy8pvnmralv1ar-curl-8.7.1-bin/bin/curl",
+      "ports": "443",
+      "remote-domains": [
+        "gallery.vsassets.io"
       ]
     },
     {
@@ -169,6 +219,14 @@
     },
     {
       "action": "allow",
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch",
+      "ports": "443",
+      "remote-hosts": [
+        "blocklists.obdev.at"
+      ]
+    },
+    {
+      "action": "allow",
       "process": "/Applications/Little Snitch.app/Contents/Components/Little Snitch Software Update.app/Contents/MacOS/Little Snitch Software Update",
       "remote-hosts": [
         "sw-update.obdev.at"
@@ -176,12 +234,14 @@
     },
     {
       "action": "allow",
-      "process": "/Library/Application Support/Objective Development/Little Snitch/Components/at.obdev.littlesnitch.daemon.bundle/Contents/XPCServices/at.obdev.littlesnitch.urldownloader.xpc/Contents/MacOS/at.obdev.littlesnitch.urldownloader",
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking",
       "ports": "443",
       "remote-hosts": [
         "raw.githubusercontent.com",
         "urlhaus.abuse.ch",
-        "pgl.yoyo.org"
+        "pgl.yoyo.org",
+        "cdn.jsdelivr.net",
+        "geolocation.obdev.at"
       ]
     },
     {
@@ -441,7 +501,7 @@
     },
     {
       "action": "allow",
-      "process": "/Users/ben/Applications/PyCharm Professional Edition.app/Contents/MacOS/pycharm",
+      "process": "identifier.2ZEFAR8TH3/com.jetbrains.pycharm",
       "ports": "443",
       "remote-hosts": [
         "prod.fus.aws.intellij.net",
@@ -450,6 +510,12 @@
         "plugins.jetbrains.com",
         "resources.jetbrains.com",
         "www.jetbrains.com",
+        "d3gi1t59l6k4gt.cloudfront.net",
+        "d3kdv2x2np28ys.cloudfront.net",
+        "update.googleapis.com",
+        "vulnerability-search.europe-north1-gke.intellij.net",
+        "analytics.services.jetbrains.com",
+        "downloads.marketplace.jetbrains.com",
         "bitbucket.org",
         "github.com",
         "raw.githubusercontent.com",
@@ -541,7 +607,7 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Microsoft Outlook.app/Contents/MacOS/Microsoft Outlook",
+      "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
       "ports": "443",
       "remote-hosts": [
         "outlook.office.com",
@@ -555,7 +621,16 @@
         "eur.loki.delve.office.com",
         "appsforoffice.microsoft.com",
         "augloop.office.com",
-        "agave.myanalytics.cdn.office.net"
+        "agave.myanalytics.cdn.office.net",
+        "dataservice.protection.outlook.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
+      "ports": "443",
+      "remote-domains": [
+        "safelinks.protection.outlook.com"
       ]
     },
     {
@@ -805,13 +880,16 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/JetBrains Toolbox.app/Contents/MacOS/jetbrains-toolbox",
+      "process": "identifier.2ZEFAR8TH3/com.jetbrains.toolbox",
       "remote-hosts": [
         "download.jetbrains.com",
         "download-cdn.jetbrains.com",
         "oauth.account.jetbrains.com",
         "www.jetbrains.com",
-        "preview.feed.toolbox.app"
+        "preview.feed.toolbox.app",
+        "d3kdv2x2np28ys.cloudfront.net",
+        "downloads.marketplace.jetbrains.com",
+        "plugins.jetbrains.com"
       ]
     },
     {
@@ -831,24 +909,25 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Microsoft Teams (work or school).app/Contents/MacOS/MSTeams",
+      "process": "identifier.UBF8T346G9/com.microsoft.teams2",
       "ports": "443",
       "remote-hosts": [
-        "onedscolprdneu15.northeurope.cloudapp.azure.com",
         "s-0005.dual-s-msedge.net",
         "odc.officeapps.live.com",
         "login.microsoftonline.com",
         "eu-api.asm.skype.com",
-        "onedscolprdneu10.northeurope.cloudapp.azure.com",
-        "graph.microsoft.com"
+        "ams-efz.ms-acdc.office.com",
+        "statics.teams.cdn.office.net"
       ]
     },
     {
       "action": "allow",
-      "process": "/Applications/Microsoft Teams (work or school).app/Contents/MacOS/MSTeams",
+      "process": "identifier.UBF8T346G9/com.microsoft.teams2",
       "ports": "443",
       "remote-domains": [
-        "teams.microsoft.com"
+        "teams.microsoft.com",
+        "graph.microsoft.com",
+        "edge.microsoft.com"
       ]
     },
     {
