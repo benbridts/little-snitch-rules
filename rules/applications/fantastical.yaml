@@ -1,9 +1,10 @@
 - action: allow
-  process: &app /Applications/Fantastical.app/Contents/MacOS/Fantastical
+  process: &app identifier.85C27NK92C/com.flexibits.fantastical2.mac
   ports: "443"
   remote-hosts:
     - flexibits.com  # IAP: account + updates
     - api.flexibits.com  # IAP
+    - cdn.flexibits.com
     # office 365
     - outlook.office365.com
 - action: allow

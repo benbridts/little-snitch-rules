@@ -124,7 +124,7 @@
     {
       "action": "allow",
       "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
-      "via": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "via": "/nix/store/327bf08j5b7l9cnzink3g4vp32y5352j-python3-3.11.9/bin/python3.11",
       "remote-domains": [
         "aws.amazon.com",
         "amazonaws.com"
@@ -132,7 +132,7 @@
     },
     {
       "action": "allow",
-      "process": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "process": "/nix/store/327bf08j5b7l9cnzink3g4vp32y5352j-python3-3.11.9/bin/python3.11",
       "remote-hosts": [
         "pypi.org",
         "codeartifact.eu-west-1.amazonaws.com",
@@ -142,7 +142,7 @@
     {
       "action": "allow",
       "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
-      "via": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "via": "/nix/store/327bf08j5b7l9cnzink3g4vp32y5352j-python3-3.11.9/bin/python3.11",
       "remote-hosts": [
         "pypi.org",
         "codeartifact.eu-west-1.amazonaws.com",
@@ -152,7 +152,17 @@
     {
       "action": "allow",
       "process": "/Users/ben/Applications/PyCharm Professional Edition.app/Contents/MacOS/pycharm",
-      "via": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11",
+      "via": "/nix/store/327bf08j5b7l9cnzink3g4vp32y5352j-python3-3.11.9/bin/python3.11",
+      "remote-hosts": [
+        "pypi.org",
+        "codeartifact.eu-west-1.amazonaws.com",
+        "dualstack.python.map.fastly.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "identifier.NTY7FVCEKP/net.kovidgoyal.kitty",
+      "via": "/nix/store/327bf08j5b7l9cnzink3g4vp32y5352j-python3-3.11.9/bin/python3.11",
       "remote-hosts": [
         "pypi.org",
         "codeartifact.eu-west-1.amazonaws.com",
@@ -246,13 +256,25 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "process": "identifier.EQHXZ8M8AV/com.google.Chrome",
       "ports": "443",
       "remote": "any"
     },
     {
       "action": "allow",
-      "process": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      "process": "identifier.EQHXZ8M8AV/com.google.Chrome",
+      "ports": "5228",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.EQHXZ8M8AV/com.google.Chrome",
+      "ports": "1900",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.EQHXZ8M8AV/com.google.Chrome",
       "ports": "80",
       "remote-domains": [
         "neverssl.com",
@@ -435,6 +457,13 @@
     },
     {
       "action": "allow",
+      "process": "identifier.XSYZ3E4B7D/com.knollsoft.Hookshot",
+      "remote-hosts": [
+        "rectangleapp.com"
+      ]
+    },
+    {
+      "action": "allow",
       "process": "/Applications/SoundSource.app/Contents/MacOS/SoundSource",
       "remote-hosts": [
         "rogueamoeba.net"
@@ -442,21 +471,27 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "remote-hosts": [
         "update.code.visualstudio.com",
         "marketplace.visualstudio.com",
-        "onedscolprdeus21.eastus.cloudapp.azure.com",
-        "d3gi1t59l6k4gt.cloudfront.net",
-        "e-0014.e-msedge.net",
         "www.gravatar.com",
-        "az764295.vo.msecnd.net",
-        "onedscolprdaue02.australiaeast.cloudapp.azure.com"
+        "default.exp-tas.com"
       ]
     },
     {
       "action": "allow",
-      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-domains": [
+        "cloudapp.azure.com",
+        "cloudfront.net",
+        "e-msedge.net",
+        "msecnd.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "via": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper",
       "remote-hosts": [
         "api.github.com",
@@ -465,7 +500,7 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "via": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper",
       "remote-domains": [
         "gallerycdn.vsassets.io"
@@ -473,7 +508,7 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
       "via": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)",
       "ports": "443",
       "remote-hosts": [
@@ -498,6 +533,16 @@
         "desktop-release.codewhisperer.us-east-1.amazonaws.com",
         "specs.codewhisperer.us-east-1.amazonaws.com"
       ]
+    },
+    {
+      "action": "allow",
+      "process": "identifier.NTY7FVCEKP/net.kovidgoyal.kitty",
+      "via": "/usr/bin/ssh",
+      "remote-hosts": [
+        "bitbucket.org",
+        "github.com"
+      ],
+      "ports": "22"
     },
     {
       "action": "allow",
@@ -534,21 +579,39 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Amazon Chime.app/Contents/MacOS/Amazon Chime",
+      "process": "identifier.94KV3E626L/com.amazon.Amazon-Chime",
       "ports": "443",
       "remote-hosts": [
         "cognito-identity.us-east-1.amazonaws.com",
         "iada-sign-signinel-niiwn22wyckr-1024618568.us-east-1.elb.amazonaws.com",
         "kinesis.us-east-1.amazonaws.com",
-        "o1138149.ingest.sentry.io"
+        "o1138149.ingest.sentry.io",
+        "s3.amazonaws.com"
       ]
     },
     {
       "action": "allow",
-      "process": "/Applications/Amazon Chime.app/Contents/MacOS/Amazon Chime",
+      "process": "identifier.94KV3E626L/com.amazon.Amazon-Chime",
       "ports": "443",
       "remote-domains": [
         "app.chime.aws"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.autoupdate.fba",
+      "ports": "443",
+      "remote-hosts": [
+        "officeci-mauservice.azurewebsites.net",
+        "mobile.events.data.microsoft.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.autoupdate.fba",
+      "ports": "443",
+      "remote-domains": [
+        "cdn.office.net"
       ]
     },
     {
@@ -611,18 +674,17 @@
       "ports": "443",
       "remote-hosts": [
         "outlook.office.com",
+        "ecs.office.com",
+        "augloop.office.com",
+        "dataservice.protection.outlook.com",
+        "graph.microsoft.com",
         "outlook.office365.com",
         "config.edge.skype.com",
         "presence.teams.microsoft.com",
-        "nexusrules.officeapps.live.com",
-        "eu-office.events.data.microsoft.com",
-        "login.microsoftonline.com",
-        "ecs.office.com",
-        "eur.loki.delve.office.com",
         "appsforoffice.microsoft.com",
-        "augloop.office.com",
-        "agave.myanalytics.cdn.office.net",
-        "dataservice.protection.outlook.com"
+        "nexusrules.officeapps.live.com",
+        "odc-eu.officeapps.live.com",
+        "login.microsoftonline.com"
       ]
     },
     {
@@ -630,7 +692,11 @@
       "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
       "ports": "443",
       "remote-domains": [
-        "safelinks.protection.outlook.com"
+        "safelinks.protection.outlook.com",
+        "loki.delve.office.com",
+        "events.data.microsoft.com",
+        "cdn.office.net",
+        "config.office.net"
       ]
     },
     {
@@ -703,6 +769,16 @@
     },
     {
       "action": "allow",
+      "process": "identifier.QED4VVPZWA/com.logi.cp-dev-mgr",
+      "ports": "443",
+      "remote-hosts": [
+        "accounts.logi.com",
+        "datapipeline.logitech.io",
+        "datapipeline.prod.logitech.io"
+      ]
+    },
+    {
+      "action": "allow",
       "process": "/Users/ben/Library/Application Support/Google/GoogleUpdater/126.0.6441.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater",
       "remote-hosts": [
         "update.googleapis.com",
@@ -735,11 +811,12 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/Fantastical.app/Contents/MacOS/Fantastical",
+      "process": "identifier.85C27NK92C/com.flexibits.fantastical2.mac",
       "ports": "443",
       "remote-hosts": [
         "flexibits.com",
         "api.flexibits.com",
+        "cdn.flexibits.com",
         "outlook.office365.com"
       ]
     },
@@ -913,6 +990,7 @@
       "ports": "443",
       "remote-hosts": [
         "s-0005.dual-s-msedge.net",
+        "s-0005.dual-s-dc-msedge.net",
         "odc.officeapps.live.com",
         "login.microsoftonline.com",
         "eu-api.asm.skype.com",
@@ -927,7 +1005,18 @@
       "remote-domains": [
         "teams.microsoft.com",
         "graph.microsoft.com",
-        "edge.microsoft.com"
+        "edge.microsoft.com",
+        "cosmic.office.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.teams2",
+      "ports": "443",
+      "remote-hosts": [
+        "2.17.107.176",
+        "52.123.137.145",
+        "52.123.159.137"
       ]
     },
     {

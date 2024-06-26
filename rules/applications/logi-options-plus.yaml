@@ -1,0 +1,7 @@
+- action: allow
+  process: identifier.QED4VVPZWA/com.logi.cp-dev-mgr
+  ports: "443"
+  remote-hosts:
+    - accounts.logi.com
+    - datapipeline.logitech.io
+    - datapipeline.prod.logitech.io

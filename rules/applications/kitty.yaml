@@ -1,0 +1,8 @@
+# allow ssh for git cloning
+- action: allow
+  process: identifier.NTY7FVCEKP/net.kovidgoyal.kitty
+  via: /usr/bin/ssh
+  remote-hosts:
+    - bitbucket.org
+    - github.com
+  ports: "22"

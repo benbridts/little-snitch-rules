@@ -1,0 +1,14 @@
+- action: allow
+  process: &p /Users/{user}/Applications/GoLand.app/Contents/MacOS/goland
+  ports: "443"
+  remote-hosts:
+    - github.com
+
+- action: allow
+  process: *p
+  via: "{go}"
+  ports: "443"
+  remote-hosts:
+    - proxy.golang.org
+    - sum.golang.org
+    - storage.googleapis.com

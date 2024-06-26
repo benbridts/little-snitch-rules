@@ -1,8 +1,16 @@
 # surf over https is allowed
 - action: allow
-  process: &p /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+  process: &p identifier.EQHXZ8M8AV/com.google.Chrome
   ports: "443"
   remote: any
+- action: allow
+  process: &p identifier.EQHXZ8M8AV/com.google.Chrome
+  ports: "5228"  # google settings sync
+  remote: any  # seen as ips
+- action: allow
+  process: &p identifier.EQHXZ8M8AV/com.google.Chrome
+  ports: "1900"  # google talk
+  remote: any  # seen as ips
 # http exceptions
 - action: allow
   process: *p

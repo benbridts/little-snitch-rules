@@ -12,3 +12,7 @@
   process: /Users/{user}/Applications/PyCharm Professional Edition.app/Contents/MacOS/pycharm
   via: *p
   remote-hosts: *hosts
+- action: allow
+  process: identifier.NTY7FVCEKP/net.kovidgoyal.kitty
+  via: *p
+  remote-hosts: *hosts

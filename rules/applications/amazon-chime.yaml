@@ -1,11 +1,12 @@
 - action: allow
-  process: &p /Applications/Amazon Chime.app/Contents/MacOS/Amazon Chime
+  process: &p identifier.94KV3E626L/com.amazon.Amazon-Chime
   ports: "443"
   remote-hosts:
     - cognito-identity.us-east-1.amazonaws.com
     - iada-sign-signinel-niiwn22wyckr-1024618568.us-east-1.elb.amazonaws.com
     - kinesis.us-east-1.amazonaws.com
     - o1138149.ingest.sentry.io
+    - s3.amazonaws.com
 - action: allow
   process: *p
   ports: "443"

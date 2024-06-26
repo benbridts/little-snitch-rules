@@ -1,15 +1,17 @@
 - action: allow
-  process: &p /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+  process: &p identifier.UBF8T346G9/com.microsoft.VSCode
   remote-hosts:
     - update.code.visualstudio.com
     - marketplace.visualstudio.com
-    # ???
-    - onedscolprdeus21.eastus.cloudapp.azure.com
-    - d3gi1t59l6k4gt.cloudfront.net
-    - e-0014.e-msedge.net
     - www.gravatar.com
-    - az764295.vo.msecnd.net
-    - onedscolprdaue02.australiaeast.cloudapp.azure.com
+    - default.exp-tas.com
+- action: allow
+  process: &p identifier.UBF8T346G9/com.microsoft.VSCode
+  remote-domains:
+    - cloudapp.azure.com
+    - cloudfront.net
+    - e-msedge.net
+    - msecnd.net
 # Helper
 - action: allow
   process: *p

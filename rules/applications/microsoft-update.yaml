@@ -1,0 +1,12 @@
+- action: allow
+  process: &p identifier.UBF8T346G9/com.microsoft.autoupdate.fba
+  ports: "443"
+  remote-hosts:
+    - officeci-mauservice.azurewebsites.net
+    - mobile.events.data.microsoft.com
+
+- action: allow
+  process: *p
+  ports: "443"
+  remote-domains:
+    - cdn.office.net

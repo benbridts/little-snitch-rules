@@ -5,4 +5,4 @@ go: /nix/store/z6p2j8shdwi74kbm86jwdh03vxq91l0q-go-1.21.5/share/go/bin/go
 limactl: /nix/store/viv97gnnms5k1ymakwa0hmi3p772y1pn-lima-0.21.0/bin/.limactl-wrapped
 nix: /nix/store/009hyb1ryy8jrypqikcaz4nfh3xkbaaz-nix-2.18.2/bin/nix
 node: /nix/store/m5qp112sg85v6kx5xkz8ka8hlhrwmflp-nodejs-22.0.0/bin/node
-python: /nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6/bin/python3.11
+python: /nix/store/327bf08j5b7l9cnzink3g4vp32y5352j-python3-3.11.9/bin/python3.11

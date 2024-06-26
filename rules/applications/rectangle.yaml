@@ -1,4 +1,7 @@
 - action: allow
   process: /Applications/Rectangle.app/Contents/MacOS/Rectangle
-  remote-hosts:
+  remote-hosts: &hosts
     - rectangleapp.com
+- action: allow
+  process: identifier.XSYZ3E4B7D/com.knollsoft.Hookshot  # rectangle pro
+  remote-hosts: *hosts
